@@ -22,7 +22,7 @@ staticfiles/
 .coverage
 htmlcov/
 pytest_cache/
-
+    
 .vscode/
 .idea/
 .DS_Store
