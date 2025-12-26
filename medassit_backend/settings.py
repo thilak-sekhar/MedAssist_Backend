@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -103,6 +104,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+os.environ.setdefault(
+    'DJANGO_SETTINGS_MODULE',
+    'medassist_backend.settings'
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
